@@ -1,0 +1,110 @@
+* {
+    margin: 0px;
+    font-family: "Poppins", sans-serif;
+
+}
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #C0EBF9;
+    align-items: center;
+
+    
+}
+main {
+    min-width: calc(100% - 40px);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    height: 100vh;
+
+}
+h1 {
+    font-weight: 700;
+    font-size: 24px;
+    color: #467745;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (max-width: 640px) {
+    h1 {
+        margin: 0px;
+        margin-bottom: 20px;
+    }
+    input.text-input{
+        min-width: calc(100% - 40px);
+
+    }
+    textarea {
+        min-width: calc(100% - 40px);
+
+    }
+
+}
+
+input.text-input{
+    max-width: 600px;
+    height: 64px;
+    margin-bottom: 20px;
+    border: 0px;
+}
+input.text-input::placeholder {
+color: #467745;
+opacity: 0.4;
+padding-left: 20px;
+font-size: 16px;
+font-weight: 500;
+
+}
+textarea {
+    max-width: 600px;
+    height: 120px;
+    border: 0px;
+
+}
+textarea::placeholder{
+    font-size: 16px;
+    opacity: 0.4;
+    color: #467745;
+    padding: 20px;
+    font-weight: 400;
+}
+div.checkbox{
+    display: flex;
+    font-weight: 400;
+    font-size: 16px;
+    color: #467745;
+    margin-top: 10px;
+}
+button {
+    font-size: 21px;
+    font-weight: 700;
+    min-width: 260px;
+    max-width: 280px;
+    height: 80px;
+    background-color: #467745;
+    color: #C0EBF9;
+    border: 0px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 0.2em;
+}
+input[type="checkbox"] {
+    border: none; /* Eltávolítja a checkbox keretét */
+    outline: none; /* Eltávolítja a fókusz állapot keretét */
+    background: none; /* Eltávolítja a háttér színt */
+}
+label[for="checkbox1"] {
+    padding-left: 20px;
+}
+label[for="checkbox2"] {
+    padding-left: 20px;
+}
+span {
+    text-decoration: underline;
+}
+
